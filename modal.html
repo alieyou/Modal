@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Модальное окно</title>
+</head>
+
+<body>
+
+    <!-- Кнопка для открытия модального окна
+<button onclick="openModal()">Открыть модальное окно</button>-->
+
+    <!-- Модальное окно -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <form class="modal-form">
+                <img class="close-btn" src="/img/Group 1724.svg" onclick="closeModal()" alt="Закрыть">
+                <h1>Заполните заявку на консультацию</h1>
+                <p>Наш специалист свяжется с Вами и ответит на любые вопросы</p>
+                <div class="form-row">
+                    <div class="form-field" id="name-field">
+                        <input type="text" id="name" name="name" placeholder="Имя" required>
+                    </div>
+                    <div class="form-field" id="phone-field">
+                        <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                    </div>
+                </div>
+                <div class="form-field" id="question-field">
+                    <textarea id="question" name="question" placeholder="Напишите, какой у Вас вопрос?"
+                        required></textarea>
+                    </div>
+                <div class="form-row">
+                    <div class="form-field" id="submit-field">
+                        <button type="submit" id="submit">Получить консультацию</button>
+                    </div>
+                    <div class="form-field" id="agree">
+                        <label>
+                            Я соглашаюсь на <a href="">обработку персональных данных</a>
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Функция для открытия модального окна
+        function openModal() {
+            document.getElementById("myModal").style.display = "flex";
+        }
+
+        // Функция для закрытия модального окна
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+
+
+</body>
+
+</html>
