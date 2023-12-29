@@ -42,9 +42,28 @@ body {
         padding-right: 30px;
         gap: 15px;
     }
+
     .modal-content {
         width: 430px;
     }
+
+    .close-btn {
+        display: none;
+    }
+
+    .close-btn-mv {
+        display: inline-block !important;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        font-size: 18px;
+        color: #333;
+    }
+}
+
+.close-btn-mv {
+    display: none;
 }
 
 .form-row {
@@ -67,8 +86,8 @@ body {
 /* Стили для кнопки закрытия модального окна */
 .close-btn {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -40px;
+    right: -40px;
     cursor: pointer;
     font-size: 18px;
     color: #333;
@@ -84,7 +103,8 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 135%; /* 21.6px */
+    line-height: 135%;
+    /* 21.6px */
     letter-spacing: 0.8px;
 }
 
@@ -97,6 +117,7 @@ body {
         width: 378px;
         text-align: center;
     }
+
     #question-field {
         width: 372px;
     }
@@ -136,10 +157,12 @@ body {
         width: 370px;
         max-height: 49px;
     }
+
     #phone {
-        width: 370px!important;
+        width: 370px !important;
         max-height: 49px;
     }
+
     #question {
         min-width: 370px;
         max-height: 49px;
@@ -185,7 +208,8 @@ input::placeholder {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 135%; /* 21.6px */
+    line-height: 135%;
+    /* 21.6px */
     letter-spacing: 0.8px;
 }
 
@@ -194,7 +218,8 @@ textarea::placeholder {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 135%; /* 21.6px */
+    line-height: 135%;
+    /* 21.6px */
     letter-spacing: 0.8px;
 }
 
@@ -203,7 +228,8 @@ label {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 135%; /* 16.2px */
+    line-height: 135%;
+    /* 16.2px */
     letter-spacing: 0.6px;
 }
 
@@ -218,52 +244,78 @@ label a {
 }
 
 @media (max-width: 375px) {
-.modal-content {
-    width: 375px;
-    padding: 0px;
-}
-.modal-form {
-    padding: 15px;
-}
-h1 {
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 106%;  
-}
-p {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 135%; /* 18.9px */
-    letter-spacing: 0.7px;   
-}
-#name {
-    max-width: 337px;
-}
-#phone {
-    max-width: 337px!important;
-}
-#question {
-    display: flex;
-    width: 339px!important;
-    min-width: 339px!important;
-}
-#submit-field {
-    width: 345px;
-}
-input::placeholder {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 135%; /* 21.6px */
-    letter-spacing: 0.8px;
-}
-textarea::placeholder {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 135%; /* 21.6px */
-    letter-spacing: 0.8px;
-}
+    .modal-content {
+        width: 375px;
+        padding: 0px;
+    }
+
+    .modal-form {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 106%;
+    }
+
+    p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 135%;
+        /* 18.9px */
+        letter-spacing: 0.7px;
+    }
+
+    #name {
+        max-width: 337px;
+    }
+
+    #phone {
+        max-width: 337px !important;
+    }
+
+    #question {
+        display: flex;
+        width: 339px !important;
+        min-width: 339px !important;
+    }
+
+    #submit-field {
+        width: 345px;
+    }
+
+    input::placeholder {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 135%;
+        /* 21.6px */
+        letter-spacing: 0.8px;
+    }
+
+    textarea::placeholder {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 135%;
+        /* 21.6px */
+        letter-spacing: 0.8px;
+    }
+
+    .close-btn {
+        display: none;
+    }
+
+    .close-btn-mv {
+        display: inline-block !important;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        cursor: pointer;
+        font-size: 18px;
+        color: #333;
+    }
 }
