@@ -137,7 +137,7 @@ body {
         max-height: 49px;
     }
     #phone {
-        min-width: 370px;
+        width: 370px!important;
         max-height: 49px;
     }
     #question {
@@ -242,10 +242,12 @@ p {
     max-width: 337px;
 }
 #phone {
-    max-width: 337px;
+    max-width: 337px!important;
 }
 #question {
-    min-width: 337px;
+    display: flex;
+    width: 339px!important;
+    min-width: 339px!important;
 }
 #submit-field {
     width: 345px;
